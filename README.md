@@ -76,7 +76,7 @@ From [Cloud Shell](https://cloud.google.com/shell/docs/using-cloud-shell), run t
 Change `PROJECT_ID` to the id of your project.
 
 ```bash
-export PROJECT_ID=<CHANGE TO YOUR PROJECT ID>
+export PROJECT_ID='marketinganalyticsgenai-df'
  
 gcloud config set project $PROJECT_ID
  
@@ -122,9 +122,9 @@ In Cloud Shell, enter the following command.
  - For `<YOUR_LOCATION>`, add a zone (for example, `us-central1-a` or `europe-west4-a`).
 
 ```bash
-PROJECT_ID=<CHANGE TO YOUR PROJECT ID>
-INSTANCE_NAME=<YOUR_INSTANCE_NAME>
-LOCATION=<YOUR_LOCATION>
+PROJECT_ID='marketinganalyticsgenai-df'
+INSTANCE_NAME='nbgenaimkt'
+LOCATION='us-central1-a'
 gcloud notebooks instances create $INSTANCE_NAME \
      --vm-image-project=deeplearning-platform-release \
      --vm-image-family=common-cpu-notebooks \
